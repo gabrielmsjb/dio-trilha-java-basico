@@ -34,8 +34,10 @@ public class ConjuntoConvidados {
     public void removerConvidado(String codigoConvite) {
         Convidado convidadoParaRemover = null;
         for (Convidado c : convidados) {
-            if (c.getCodigoConvite() == Integer.parseInt(codigoConvite))
+            if (c.getCodigoConvite() == Integer.parseInt(codigoConvite)) {
                 convidadoParaRemover = c;
+                break;
+            }
         }
         convidados.remove(convidadoParaRemover);
     }
@@ -45,8 +47,6 @@ public class ConjuntoConvidados {
     }
 
     public void exibirConvidados() {
-        for (Convidado c : convidados) {
-            System.out.println(c.getNome());
-        }
+        System.out.println(convidados);
     }
 }
