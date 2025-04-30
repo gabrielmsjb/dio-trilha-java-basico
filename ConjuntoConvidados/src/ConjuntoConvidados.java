@@ -11,17 +11,16 @@ public class ConjuntoConvidados {
     public static void main(String[] args) {
         ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
         conjuntoConvidados.adicionarConvidado("Gabriel", 1);
-        conjuntoConvidados.adicionarConvidado("Leandro", 2);
-        conjuntoConvidados.adicionarConvidado("Genia", 3);
-        conjuntoConvidados.adicionarConvidado("Milena", 4);
+        conjuntoConvidados.adicionarConvidado("Leandro", 3);
+        conjuntoConvidados.adicionarConvidado("Genia", 2);
+        conjuntoConvidados.adicionarConvidado("Milena", 2);
         conjuntoConvidados.adicionarConvidado("Wanderson", 5);
-        conjuntoConvidados.adicionarConvidado("Celia", 6);
+        conjuntoConvidados.adicionarConvidado("Celia", 2);
         conjuntoConvidados.adicionarConvidado("Vilma", 7);
         System.out.println(conjuntoConvidados.contarConvidados());
         conjuntoConvidados.exibirConvidados();
 
         conjuntoConvidados.removerConvidado("7");
-        conjuntoConvidados.removerConvidado("3");
 
         System.out.println(conjuntoConvidados.contarConvidados());
         conjuntoConvidados.exibirConvidados();
